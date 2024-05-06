@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.amazon'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation (
+            ['org.seleniumhq.selenium:selenium-java:4.19.1'],
+            ['io.github.bonigarcia:webdrivermanager:5.8.0'],
+            ['org.junit.jupiter:junit-jupiter:5.10.2']
+    )
+}
+
+test {
+    useJUnitPlatform()
+}
